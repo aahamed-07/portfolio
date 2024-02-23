@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Licenses</title>
+	<link rel="stylesheet" href="css/style.css">
+
+<style>
+	
+</style>
+</head>
+<body>
+	<section class="page projects-page" id="projects">
+            <div class="project-container">
+                <h1 class="project-heading">Licenses</h1>
+                <div class="project-box-container" id="projects-main-box">
+                    <!-- Project Content Goes here -->
+                </div>
+                <div id="load-more">Load More</div>
+            </div>
+    </section>
+
+<script src="js/script.js"></script>
+<script>
+//Code for Loading JSON data in Project Section
+var projectlist = [{
+        sno: 1,
+        name: 'UI Library',
+        descb: 'UI Library with HTML, CSS & JS',
+        photo: 'assets/img/website-design-icon-wh.svg',
+        links: 'http://google.com',
+        date: '2022-2024'
+    },
+    {
+        sno: 2,
+        name: 'Object Detection YOLOv8 ',
+        descb: 'Real Time Object Detection using YOLOv8 in Python',
+        photo: 'assets/img/tech-icon-wh.svg',
+        links: 'http://google.com',
+        date: '2023'
+    },
+    {
+        sno: 3,
+        name: 'Ecommerce Website',
+        descb: 'Ecommerce Website using MERN Stack',
+        photo: 'assets/img/bag-icon-wh.svg',
+        links: 'http://google.com',
+        date: '2024'
+    },
+    {
+        sno: 4,
+        name: 'Video Playing Service',
+        descb: 'In build process',
+        photo: 'assets/img/video-playlist-icon-wh.svg',
+        links: 'http://google.com',
+        date: '2023-?'
+    },
+];
+
+var singleproject = projectlist.map((p) => {
+    return `
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="${p.photo}">
+                </div>
+                <div class="project-content">
+                    <h3>${p.name}</h3>
+                    <p>${p.descb}</p>
+                    <a href="${p.links}" class="project-btn"><i class="fa fa-github">
+                    </i>Repository</a>
+                    <div class="project-icons">
+                        <span><i class="fa fa-calendar"></i>${p.date}</span>
+                        <span><i class="fa fa-user"></i>ALi</span>
+                    </div>
+                </div>
+            </div>`;
+
+});
+document.getElementById('projects-main-box').innerHTML = singleproject.join("");
+
+console.log(singleproject);
+
+console.log(projectlist);
+//
+</script>
+</body>
+</html>
