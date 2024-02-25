@@ -1,4 +1,4 @@
-zp=zp[z-s] @font-face {
+@font-face {
     font-family: poppins;
     src: url(assets/fonts/Poppins-Medium.ttf);
     font-weight: ;
@@ -19,6 +19,9 @@ zp=zp[z-s] @font-face {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
     box-sizing: border-box;
 
 }

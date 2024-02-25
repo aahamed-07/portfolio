@@ -45,7 +45,7 @@ var projectlist = [{
         name: 'UI Library',
         descb: 'UI Library with HTML, CSS & JS',
         photo: 'assets/img/website-design-icon-wh.svg',
-        links: 'http://google.com',
+        links: 'https://github.com/aahamed-07/Stupid-UI-Library',
         date: '2022-2024'
     },
     {
@@ -53,7 +53,7 @@ var projectlist = [{
         name: 'Object Detection YOLOv8 ',
         descb: 'Real Time Object Detection using YOLOv8 in Python',
         photo: 'assets/img/tech-icon-wh.svg',
-        links: 'http://google.com',
+        links: 'https://github.com/aahamed-07/YOLOv8-Obj-Detection',
         date: '2023'
     },
     {
@@ -70,7 +70,7 @@ var projectlist = [{
         descb: 'In build process',
         photo: 'assets/img/video-playlist-icon-wh.svg',
         links: 'http://google.com',
-        date: '2023-?'
+        date: '2024-?'
     },
 ];
 
@@ -83,7 +83,7 @@ var singleproject = projectlist.map((p) => {
                 <div class="project-content">
                     <h3>${p.name}</h3>
                     <p>${p.descb}</p>
-                    <a href="${p.links}" class="project-btn"><i class="fa fa-github">
+                    <a href="${p.links}" class="project-btn" target="_blank"><i class="fa fa-github">
                     </i>Repository</a>
                     <div class="project-icons">
                         <span><i class="fa fa-calendar"></i>${p.date}</span>
