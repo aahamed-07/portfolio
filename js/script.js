@@ -61,7 +61,7 @@ var projectlist = [{
         name: 'Ecommerce Website',
         descb: 'Ecommerce Website using MERN Stack',
         photo: 'assets/img/bag-icon-wh.svg',
-        links: 'http://google.com',
+        links: 'https://github.com/aahamed-07/mern-ecom',
         date: '2024'
     },
     {
